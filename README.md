@@ -1,2 +1,2 @@
 # java-sv2-labs
-VIDEO - e-learning gyakorlati feladatok (első hét külön - firstweek repo)
+VIDEO - e-learning gyakorlati feladatok és selfcheck(első hét külön - firstweek repo)
