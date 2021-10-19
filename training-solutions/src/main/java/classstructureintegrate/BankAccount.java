@@ -18,6 +18,6 @@ public class BankAccount {
         balance = balance +amount;
     }
     public String getInfo(){
-        return owner+" ("+accountNumber+") "+balance+" Ft");
+        return owner+" ("+accountNumber+") "+balance+" Ft";
     }
 }
