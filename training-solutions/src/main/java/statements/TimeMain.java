@@ -15,6 +15,19 @@ public class TimeMain {
 
         Time time = new Time(hour,min,sec);
 
+        System.out.println("Az második időpont óra:");
+        int hourNext = scanner.nextInt();
+        System.out.println("Az második időpont perc:");
+        int minNext = scanner.nextInt();
+        System.out.println("Az második időpont másodperc:");
+        int secNext = scanner.nextInt();
+
+        Time timeNext = new Time(hourNext,minNext,secNext);
+
+        System.out.println("Az első időpont: " + time.toString() +" = "+ time.getInMinutes()+" perc");
+        System.out.println("A második időpont: " + timeNext.toString() +" = "+ timeNext.getInSeconds()+" másodperc");
+        System.out.println("Az első korábbi, mint a második: " + time.earlierThan(timeNext));
+
 
 
 
