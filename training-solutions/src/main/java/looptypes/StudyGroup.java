@@ -14,13 +14,13 @@ public class StudyGroup {
 
             }
         }
-      }
+    }
 
     public static void main(String[] args) {
-        List<String> students = Arrays.asList("Cserepes Virág","Kukor Ica", "Harry Potter", "Alma Málna", "Kis Peti");
+        List<String> students = Arrays.asList("Cserepes Virág", "Kukor Ica", "Harry Potter", "Alma Málna", "Kis Peti");
         StudyGroup studyGroup = new StudyGroup();
         studyGroup.printStudyGroups(students);
-        
+
 
     }
 }
