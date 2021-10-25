@@ -12,17 +12,17 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] [Kifejezések és utasítások videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709849-kifejezesek-es-utasitasok)
 * [ ] Kifejezések és utasítások gyakorlati feladat
 * [x] [Csomagok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709796-csomagok)
-* [ ] Csomagok gyakorlati feladat
+* [x] Csomagok gyakorlati feladat
 * [x] [Java API videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709757-java-api)
-* [ ] Java API gyakorlati feladat
+* [x] Java API gyakorlati feladat
 * [x] [JAR állomány videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709835-jar-allomany)
-* [ ] JAR állomány gyakorlati feladat
+* [x] JAR állomány gyakorlati feladat
 * [x] [Szöveges típus](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709758-szoveges-tipus)
 * [ ] Szöveges típus gyakorlati feladat
 * [x] [Sortörés kezelése](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28188842-sortores-kezelese)
-* [ ] Sortörés kezelése gyakorlati feladat
+* [x] Sortörés kezelése gyakorlati feladat
 * [x] [Dátum és időkezelés alapok](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709798-datum-es-idokezeles-alapok)
-* [ ] Dátum és időkezelés alapok gyakorlati feladat
+* [x] Dátum és időkezelés alapok gyakorlati feladat
 * [x] [Bevezetés a vezérlési szerkezetekbe](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709782-bevezetes-a-vezerlesi-szerkezetekbe)
 * [ ] Bevezetés a vezérlési szerkezetekbe gyakorlati feladat
 
@@ -37,7 +37,7 @@ a bonyolultabb típusokat fogjátok alapszinten megismerni.
 * [x] [Tömbök kezelése](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709801-tombok-kezelese)
 * [ ] Tömbök kezelése gyakorlati feladat
 * [x] [Lista](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709852-lista)
-* [ ] Lista gyakorlati feladat
+* [x] Lista gyakorlati feladat
 * [x] [Lista létrehozása](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993631-lista-letrehozasa)
 * [ ] Lista létrehozása gyakorlati feladat
 * [x] [Ciklusok fajtái](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993677-ciklusok-fajtai)
