@@ -41,4 +41,4 @@ a Java osztályokat fogjátok alapszinten megismerni.
 * [x] 2021-10-14 konzultáció részvétel/videó
 * [x] 2021-10-14 konzultáció gyakorlati feladat
 * [x] 2021-10-15 konzultáció részvétel/videó
-* [x] 2021-10-15 konzultáció gyakorlati feladat
+* [x] 2021-10-15 konzultáció gyakorlati feladat 
