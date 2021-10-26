@@ -7,6 +7,5 @@ public class CmdMain {
         System.out.println("2. elem: "+args[1]);
         System.out.println("3. elem: "+args[2]);
         System.out.println("4. elem: "+args[3]);
-
     }
 }
