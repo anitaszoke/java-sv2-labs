@@ -19,21 +19,19 @@ public class LanguageSchool {
         students.add(student4);
         students.add(student5);
 
+        System.out.println(students.size());
+
         student1.setActive(false);
         student2.setActive(false);
 
         List<Student> removeStudent = new ArrayList<>();
-
-
+        for (Student item : students) {
+            if (!item.isActive()) {
+                removeStudent.add(item);
+            }
         }
-
-
-
-
-
-
-
-
-
+        students.removeAll(removeStudent);
+        System.out.println(students.size());
     }
 }
+
