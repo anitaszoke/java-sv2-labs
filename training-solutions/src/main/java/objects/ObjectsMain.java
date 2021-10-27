@@ -1,5 +1,9 @@
 package objects;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class ObjectsMain {
     public static void main(String[] args) {
 
@@ -42,6 +46,25 @@ public class ObjectsMain {
         book5 = new Book();
         book6 = null;
         book5 = book4;
+
+        //Tömbök és listák
+
+        Book bookOne = new Book();
+        Book bookTwo = new Book();
+        Book bookThree = new Book();
+        Book[] books = {bookOne,bookTwo,bookThree};
+
+        List<Book> bookList = Arrays.asList(bookOne,bookTwo,bookThree);
+        List<Book> bookEmptyList = new ArrayList<>();
+        bookEmptyList.add(bookOne);
+        bookEmptyList.add(bookTwo);
+        bookEmptyList.add(bookThree);
+
+        System.out.println(Arrays.toString(books));
+        System.out.println(bookList);
+        System.out.println(bookEmptyList);
+
+
 
 
 
