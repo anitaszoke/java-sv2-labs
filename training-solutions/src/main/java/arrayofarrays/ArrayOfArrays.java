@@ -2,7 +2,8 @@ package arrayofarrays;
 
 public class ArrayOfArrays {
 
-        public void printArrayOfArrays(int[][] a) {
+    //tömb tömb alap kiírás
+    public void printArrayOfArrays(int[][] a) {
             for (int itemA[] : a) {
                 for (int itemAoA : itemA)
                 System.out.print(itemAoA);
