@@ -31,20 +31,20 @@ a típusokról, az operátorokról, valamint a szöveges típusról.
 * [x] [Felsorolásos típus videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709804-felsorolasos-tipus)
 * [x] Felsorolásos típus gyakorlati feladat
 * [x] [Operátorok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709858-operatorok)
-* [ ] Operátorok gyakorlati feladat 
+* [x] Operátorok gyakorlati feladat 
 * [x] Oszthatóság vizsgálata gyakorlati feladat [(Szöveges anyag itt)](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/texts/28278683-oszthatosag-vizsgalata)
 * [x] [Egész és lebegőpontos számok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709854-egesz-es-lebegopontos-szamok)
-* [ ] Egész és lebegőpontos számok gyakorlati feladat
+* [x] Egész és lebegőpontos számok gyakorlati feladat
 * [x] [Típuskonverzió videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709762-tipuskonverzio)
-* [ ] Típuskonverzió gyakorlati feladat
+* [x] Típuskonverzió gyakorlati feladat
 * [x] [Konverziók videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993726-konverziok)
-* [ ] Konverziók gyakorlati feladat
+* [x] Konverziók gyakorlati feladat
 
 ## Részletesen a szöveges típusról
 
-* [ ] [String alapok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10710528-string-alapok)
+* [x] [String alapok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10710528-string-alapok)
 * [ ] String alapok gyakorlati feladat
-* [ ] [Konkatenáció videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10710386-konkatenacio)
+* [x] [Konkatenáció videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10710386-konkatenacio)
 * [ ] Konkatenáció gyakorlati feladat
 * [ ] [Főbb String metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10710533-fobb-string-metodusok)
 * [ ] Főbb String metódusok gyakorlati feladat
