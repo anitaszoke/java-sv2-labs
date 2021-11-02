@@ -26,3 +26,4 @@ public class Digits {
         System.out.println(digits.getNumber());
     }
 }
+
