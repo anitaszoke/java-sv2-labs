@@ -15,13 +15,14 @@ public class StringScanner {
         while (scanner1.hasNext()) {
             System.out.println(scanner1.next());
         }
+
         System.out.println();
+
         Scanner scanner2 = new Scanner(sentence2);
 
         while (scanner2.hasNext()) {
             System.out.println(scanner2.next());
         }
-
     }
 }
 
