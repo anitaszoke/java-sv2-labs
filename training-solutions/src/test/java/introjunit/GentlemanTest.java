@@ -14,7 +14,9 @@ public class GentlemanTest {
         //When
         String name = gentleman.sayHello("John Doe");
         //Then
-        assertThat(name, equalTo("Hello John Doe!"));
+        assertThat(name, equalTo("Hello John Doe"));
+
+        assertThat(gentleman.sayHello(null),equalTo("Hello Anonymus"));
 
     }
 
