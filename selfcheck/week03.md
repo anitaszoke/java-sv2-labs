@@ -1,4 +1,4 @@
-# Harmadik hét (2021-10-25 - 2021-10-29)
+# Harmadik hét (2021-10-25 - 2021-10-29) 
 
 Ezen a héten részletesebben fogtok tanulni az osztályokról, az objektumokról, 
 a típusokról, az operátorokról, valamint a szöveges típusról.
