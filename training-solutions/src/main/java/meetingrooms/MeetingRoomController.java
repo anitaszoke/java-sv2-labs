@@ -43,34 +43,41 @@ public class MeetingRoomController {
                 readOffice();
                 System.out.println();
                 runMenu();
+                break;
             case 2:
                 office.printNames();
                 System.out.println("\n");
                 runMenu();
+                break;
             case 3:
                 office.printNamesReverse();
                 System.out.println();
                 runMenu();
+                break;
             case 4:
                 office.printEvenNames();
                 System.out.println();
                 runMenu();
+                break;
             case 5:
                 office.printArea();
                 System.out.println();
                 runMenu();
+                break;
             case 6:
                 System.out.println("Kérem adja meg a keresett tárgyaló pontos nevét: ");
                 String name = scanner.nextLine();
                 office.printMeetingRoomsWithName(name);
                 System.out.println();
                 runMenu();
+                break;
             case 7:
                 System.out.println("Kérem adja meg a keresett tárgyaló nevének egy részletét: ");
                 String part = scanner.nextLine();
                 office.printMeetingRoomsContains(part);
                 System.out.println();
                 runMenu();
+                break;
             case 8:
                 System.out.println("Kérem adjon meg egy területet (egész számot), amelynél nagyobb tárgyalók adatait keresi: ");
                 int area = scanner.nextInt();
@@ -78,9 +85,9 @@ public class MeetingRoomController {
                 office.printAreaLargerThan(area);
                 System.out.println();
                 runMenu();
+                break;
             case 9:
-                // a break nem jó;
-                System.exit(0);
+                break;
 
             default:
                 System.out.println("Ismeretlen menüpont, kérem válasszon újra!");
