@@ -8,20 +8,20 @@ import java.util.List;
 public class Poem {
     public static void main(String[] args) {
         try {
-            List<String> poem = new Poem().readPoem();
-            String firstLetter = new Poem().poemFirst(poem);
-            System.out.println(firstLetter);
+            new Poem().readPoem();
         } catch (IllegalStateException ise) {
             ise.getCause().printStackTrace();
         }
     }
 
-    private List<String> readPoem() {
+    private void readPoem() {
+        List<String> poem;
         try {
-            return Files.readAllLines(Paths.get("poem.txt"));
+            poem = Files.readAllLines(Paths.get("poem.txt"));
         } catch (IOException ioe) {
             throw new IllegalArgumentException("Can not read file", ioe);
         }
+        System.out.println(poemFirst(poem));
     }
 
     private String poemFirst(List<String> poem) {
