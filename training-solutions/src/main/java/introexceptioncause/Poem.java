@@ -9,15 +9,15 @@ public class Poem {
     public static void main(String[] args) {
         try {
             new Poem().readPoem();
-        } catch (IllegalStateException ise) {
-            ise.getCause().printStackTrace();
+        } catch (IllegalArgumentException iae) {
+            iae.getCause().printStackTrace();
         }
     }
 
     private void readPoem() {
         List<String> poem;
         try {
-            poem = Files.readAllLines(Paths.get("poem.txt"));
+            poem = Files.readAllLines(Paths.get("poem_.txt"));
         } catch (IOException ioe) {
             throw new IllegalArgumentException("Can not read file", ioe);
         }
