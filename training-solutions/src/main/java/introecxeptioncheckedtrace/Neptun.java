@@ -20,9 +20,9 @@ public class Neptun {
     private List<String> readNeptunCode() throws IOException {
         List<String> neptunCodeWithName = Files.readAllLines(Paths.get("neptun.csv"));
         List<String> neptunCode = new ArrayList<>();
-        for (int i = 0; neptunCodeWithName.size() > i; i++) {
-            int index = neptunCodeWithName.get(i).indexOf(",");
-            neptunCode.add(neptunCodeWithName.get(i).substring(index + 1));
+        for (String s : neptunCodeWithName) {
+            int index = s.indexOf(",");
+            neptunCode.add(s.substring(index + 1));
         }
         return neptunCode;
     }
