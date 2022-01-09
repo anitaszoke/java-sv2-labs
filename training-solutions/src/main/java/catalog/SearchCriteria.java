@@ -1,8 +1,8 @@
 package catalog;
 
 public class SearchCriteria {
-    public String contributor;
-    public String title;
+    public final String contributor;
+    public final String title;
 
     public String getContributor() {
         return contributor;
