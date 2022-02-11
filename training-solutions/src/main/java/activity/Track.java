@@ -1,7 +1,12 @@
 package activity;
 
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class Track {
@@ -17,6 +22,7 @@ public class Track {
     }
 
     public double getFullElevation() {
+        checkingTrackPoints();
         List<Double> elevations = createElevationsList();
 
 
@@ -48,6 +54,7 @@ public class Track {
     }
 
     public double getFullDecrease() {
+        checkingTrackPoints();
         List<Double> elevations = createElevationsList();
 
         return IntStream.range(0, elevations.size() - 1)
@@ -80,6 +87,7 @@ public class Track {
     }
 
     public double getDistance() {
+        checkingTrackPoints();
         return IntStream.range(1, trackPoints.size())
                 .mapToDouble(i -> trackPoints.get(i - 1).getDistanceFrom(trackPoints.get(i)))
                 .sum();
@@ -104,6 +112,7 @@ public class Track {
     }
 
     public Coordinate findMinimumCoordinate() {
+        checkingTrackPoints();
         double minLatitude = findMinLatitude();
         double minLongitude = findMinLongitude();
 
@@ -111,6 +120,7 @@ public class Track {
     }
 
     public Coordinate findMaximumCoordinate() {
+        checkingTrackPoints();
         double maxLatitude = findMaxLatitude();
         double maxLongitude = findMaxLongitude();
 
@@ -124,6 +134,11 @@ public class Track {
         return latitude * longitude;
     }
 
+    private void checkingTrackPoints() {
+        if (trackPoints.isEmpty()) {
+            throw new NullPointerException("Trackpoints list can not be empty!");
+        }
+    }
 
     private List<Double> createElevationsList() {
         return trackPoints.stream()
@@ -171,5 +186,55 @@ public class Track {
             }
         }
         return maxLongitude;
+    }
+
+    public void loadFromGpx(Path path) {
+        String line;
+        List<Coordinate> coordinates = new ArrayList<>();
+        List<Double> elevations = new ArrayList<>();
+
+        try {
+            try (BufferedReader reader = Files.newBufferedReader(path)) {
+                while ((line = reader.readLine()) != null) {
+
+                    if (line.contains("<trkpt")) {
+
+                        coordinates.add(createCoordinate(line));
+                    }
+                    if (line.contains("<ele>")) {
+
+                        elevations.add(createElevation(line));
+                    }
+
+                }
+            }
+        } catch (IOException ioe) {
+            throw new IllegalStateException("Error by parsing, general io", ioe);
+        }
+
+        for (int i = 0; i < coordinates.size(); i++) {
+            addTrackPoint(new TrackPoint(coordinates.get(i), elevations.get(i)));
+        }
+    }
+
+    private double createElevation(String line) {
+        String[] elevationWith = line.split(">");
+        String[] elevation = elevationWith[1].split("<");
+        String elevationOnly = elevation[0];
+
+        return Double.parseDouble(elevationOnly);
+    }
+
+    private Coordinate createCoordinate(String line) {
+        String[] latBefore = line.split("lat=\"");
+        String[] latAfter = latBefore[1].split("\" lon=\"");
+        String lat = latAfter[0];
+        String[] lonAfter = latAfter[1].split("\">");
+        String lon = lonAfter[0];
+
+        double latitude = Double.parseDouble(lat);
+        double longitude = Double.parseDouble(lon);
+
+        return new Coordinate(latitude, longitude);
     }
 }
