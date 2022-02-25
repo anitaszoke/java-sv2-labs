@@ -18,8 +18,6 @@ public class ClientMain {
         scanner.nextLine();
         client.address = scanner.nextLine();
 
-        System.out.println("Your name: "+client.name+", year of birth: "+client.year+", your address: "+client.address+".");
-
-
+        System.out.println("Your name: " + client.name + ", year of birth: " + client.year + ", your address: " + client.address + ".");
     }
 }

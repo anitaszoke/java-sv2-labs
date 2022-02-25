@@ -17,7 +17,5 @@ public class Music {
         song.length = scanner.nextInt();
 
         System.out.println(song.band + " - " + song.title + " (" + song.length + " perc)");
-
-
     }
 }
