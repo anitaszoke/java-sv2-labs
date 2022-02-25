@@ -1,6 +1,8 @@
 package activity;
 
-public class TrackPoint {
+import java.time.LocalDate;
+
+public class TrackPoint{
 
     private final Coordinate coordinate;
 

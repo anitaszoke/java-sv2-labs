@@ -22,7 +22,7 @@ public class ActivityTrackerMain {
             dataSource.setUser("activitytracker");
             dataSource.setPassword("activitytracker");
         } catch (SQLException sqle) {
-            throw new IllegalStateException("Can't connect database", sqle);
+            throw new IllegalStateException("Cannot connect database", sqle);
         }
 
         ActivityRepository ar = new ActivityRepository(dataSource);
